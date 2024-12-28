@@ -1,0 +1,8 @@
+<h1>Farm List</h1>
+<ul>
+  {% for farm in farms %}
+    <li>
+      <a href="{% url 'farm_detail' farm_id=farm.id %}">{{ farm.name }}</a>
+    </li>
+  {% endfor %}
+</ul>

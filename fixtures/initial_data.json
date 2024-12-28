@@ -1,0 +1,24 @@
+[
+    {
+        "model": "farm.farm",
+        "pk": 1,
+        "fields": {
+            "name": "Happy Acres"
+        }
+    },
+    {
+        "model": "farm.farm",
+        "pk": 2,
+        "fields": {
+            "name": "Sunny Meadows"
+        }
+    },
+    {
+        "model": "farm.sheep",
+        "fields": {
+            "farm": 1,
+            "name": "Dolly",
+            "wool_color": "White"
+        }
+    }
+]

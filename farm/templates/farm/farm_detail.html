@@ -1,0 +1,15 @@
+<h1>{{ farm.name }}</h1>
+<ul>
+  {% for animal in farm.animals.all %}
+    {% if animal.sheep %}
+      Sheep: {{ animal.name }}, Wool Color: {{ animal.sheep.wool_color }}
+    {% elif animal.pig %}
+      Pig: {{ animal.name }}, Weight: {{ animal.pig.weight }}
+    {% elif animal.cow %}
+      Cow: {{ animal.name }}, Milk Yield: {{ animal.cow.milk_yield }}
+    {% else %}
+      Unknown Animal: {{ animal.name }}
+    {% endif %}
+    <br />
+  {% endfor %}
+</ul>
