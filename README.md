@@ -1,1 +1,1 @@
-Simple Django Example Demostrating Polymorphism
+Simple Django Example Demostrating Model Inheritence and Polymorphism
